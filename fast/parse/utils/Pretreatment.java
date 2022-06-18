@@ -44,7 +44,7 @@ public class Pretreatment {
                 if(null != validateNull(values[i]) && isDate(values[i])) {
 
 
-                    pstmt.setDate(i+1, new java.sql.Date(com.boot.jjrepository.utils.DateUtils.getDate(values[i]).getTime()));
+                    pstmt.setDate(i+1, new java.sql.Date(com.boot.jjrepository.hat.fast.parse.common.DateUtils.getDate(values[i]).getTime()));
 
                 } else {
 
